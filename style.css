@@ -1,7 +1,10 @@
-body {
-	font: 'Raleway, sans-serif';
+* {
 	color: rgba(0,0,0,.5);
 	text-align: center;
+}
+
+body {
+	font: 'Raleway, sans-serif';
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	top: 15%;
@@ -10,8 +13,6 @@ body {
 
 h1 {
 	font: 900 1cm 'Raleway, sans-serif';
-	color: rgba(0,0,0,.5);
-	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	width: 100%;
@@ -19,8 +20,6 @@ h1 {
 
 h3 {
 	font: 1cm 'Raleway, sans-serif';
-	color: rgba(0,0,0,.5);
-	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
 }
