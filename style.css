@@ -1,26 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
+}
+
 body {
-	font: 'Raleway, sans-serif';
-	color: rgba(0,0,0,.5);
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full viewport height to ensure vertical centering */
+	font-family: 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
-	letter-spacing: .5em;
-	top: 15%;
-	background: linear-gradient(to right, red, yellow); /* Standard syntax*/
+	letter-spacing: 0.5em;
+	background: linear-gradient(to right, red, yellow); /* Standard syntax */
 }
 
 h1 {
-	font: 900 1cm 'Raleway, sans-serif';
-	color: rgba(0,0,0,.5);
+	font-weight: 900;
+	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: .5em;
-	width: 100%;
+	letter-spacing: 0.5em;
+	padding: 20px;
 }
 
 h3 {
-	font: 1cm 'Raleway, sans-serif';
-	color: rgba(0,0,0,.5);
+	font-size: 1.4rem;
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
+}
+
+.container {
+	width: 700px;
+	height: 70vh;
+	background-color: #fff;
+	margin: 18px auto;
+	padding: 12px 24px;
+	text-align: center;
+	border-radius: 10px; /* Optional for rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for subtle shadow */
+}
+
+#result {
+	color: #fff;
+	border: 2px double #fff;
+	height: 100px;
+	margin: 40px 0;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+input[type="color"] {
+	padding: 8px 8px;
+	margin: 20px;
+	width: 100px;
+	height: 50px;
+}
+
+button {
+	padding: 15px 30px;
+	margin: 10px 0;
+	background: linear-gradient(to right, #4a90e2, #007aff);
+	font-size: 1rem;
+	text-transform: capitalize;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	color: #fff;
+	cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+	opacity: 0.9; /* Add slight hover effect */
 }
